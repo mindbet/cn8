@@ -1,0 +1,215 @@
+////////////////////////
+// Style Guide Partials
+//
+// Your Style Guide
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All Style Guide selectors should go in here, regardless of layout or design (but separating the two in here is a good idea).
+////////////////////////
+
+
+//////////////////////////////
+// CSS Resets
+//
+// Choose your CSS Reset method:
+//  If you would like a hard reset, uncomment `compass/reset`.
+//  If you would prefer a soft reset, uncomment `normalize`
+//////////////////////////////
+
+@import 'compass/reset';
+@import 'breakpoint';
+
+/* @import 'normalize'; */
+
+
+$mobile: 480px;
+$tab: 768px;
+$desk: 1024px;
+
+
+
+
+
+
+
+
+
+
+$leftraillive: 180px;
+$leftrailmargin: 210px;
+
+
+$leftshortrailmargin: 120px;
+
+
+
+$topblue: #00a6fc;
+$darkblue: #0080c3;
+$warmgray:  #999;
+$lightgray: #eee;
+
+
+$susy: (
+  columns: 12,
+  gutters: 1/2,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  global-box-sizing: border-box
+);
+
+
+
+
+
+
+.layout-container {
+  @include container; // establish a layout context
+  margin: 0 auto;
+  width: 100%;
+  background: white;
+  padding: 0 1em 0 0;
+  @include breakpoint($tab) {
+/*    padding:0 16px;  */
+  }
+  @include breakpoint($desk) {
+    width: $desk;
+  }
+}
+
+
+header {
+  @include span(12);
+}
+
+
+.l-main_menu {
+  clear:both;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Story layout */
+
+
+
+.region-content {
+
+  padding: 16px  16px 0  16px;
+
+
+  @include breakpoint($tab) {
+
+  @include span(8 of 12);
+
+}
+  @include breakpoint($desk) {
+
+  @include span(9 of 12);
+
+}
+
+}
+
+
+
+
+
+
+.layout-sidebar-second {
+  background-color: #FAF2FD;
+  margin-top: 2em;
+  padding: 1em 1em 1em 1em;
+
+@include breakpoint($tab) {
+  @include span(4 last);
+}
+
+  @include breakpoint($desk) {
+  @include span(3 last);
+  }
+}
+
+
+
+
+.region-footer {
+  @include span(16);
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#cboxOverlay {
+  background-color: white;
+  opacity: .4;
+}
+
+/*
+
+#prefooter {
+  @include add-grid(2);
+  @include add-grid(2 at $tab);
+  @include add-grid(16 at $desk);
+  @include clearfix;
+  margin-top: 2rem;
+  clear: both;
+  padding: 20px 10px 10px 20px;
+  background-color: #515151;
+}
+*/
+
+
+#footer {
+  clear: both;
+  padding-bottom: 110px;
+  padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.block-logo-block {
+  display: none;
+  @include breakpoint($tab) {
+  display: block;
+  padding-top:58px;
+  height: 158px;
+  width: 210px;
+  float: left;
+  }
+}
+
+
+
+

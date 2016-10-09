@@ -1,0 +1,16 @@
+name: cn8
+description: 'Internet Drug News theme'
+base theme: classy
+package: Custom
+type: theme
+version: 1.0
+core: 8.x
+libraries:
+  - cn8/global-styling
+regions:
+  header: Header
+  content: Content  # the content region is required
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer
+

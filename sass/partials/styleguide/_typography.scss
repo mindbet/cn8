@@ -1,0 +1,1022 @@
+
+/* @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic); */
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,400italic,700,700italic);
+
+
+
+$seriffont: 'PT Serif';
+
+$sanseriffont: 'Libre Franklin', Verdana, san-serif;
+
+$headlinefont: 'Libre Franklin', Verdana, san-serif;
+
+
+
+
+html {
+  font-family: $sanseriffont;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+}
+
+
+p {
+  margin-bottom: 1em;
+}
+
+
+
+
+
+/* f7f8f8 light gray */
+
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+
+a:hover {
+  text-decoration: underline;
+  color: $darkblue;
+}
+
+
+p a:link {
+  text-decoration: none;
+  color: $darkblue;
+}
+
+
+main li a:link {
+  text-decoration: none;
+  color: $darkblue;
+}
+
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+b,strong {
+  font-weight: 700;
+}
+
+i,em {
+  font-style: italic;
+}
+
+
+
+
+
+/*
+Headings
+*/
+
+h1 {
+  font-size: 2em;
+  padding-top: 1em;
+  padding-bottom: .333em;
+  line-height: 1.4;
+  font-family: $headlinefont;
+}
+
+
+/*
+Title headline for Story
+*/
+
+
+
+.view-home-segmented .views-field-title  {
+  font-family: $headlinefont;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+
+.view-home-segmented .views-field-field-post-date {
+  font-size: .9em;
+  margin-bottom: 2px;
+  margin-top: .75em;
+  color: 888886;
+}
+
+
+.view-home-segmented .views-field-live-date .views-field-body p a {
+  font-weight: 700;
+  color: $darkblue;
+}
+
+
+
+.view-display-id-attachment_3 .views-field-title,
+.view-display-id-attachment_5 .views-field-title,
+.view-display-id-attachment_7 .views-field-title,
+.view-display-id-attachment_9 .views-field-title
+  {
+  font-family: $headlinefont;
+  color: $darkblue;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 1.0em;
+}
+
+
+.view-home-segmented.view-display-id-attachment_7 .views-field-field-source-line  {
+  font-family: $headlinefont;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: .8em;
+}
+
+
+.view-home-segmented.view-display-id-attachment_7 .view-header {
+  font-family: $headlinefont;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+h3 {
+  font-size: 1.41em;
+  padding-top: 1em;
+  padding-bottom: .25em;
+  font-weight: 700;
+}
+
+
+
+
+
+h4 {
+  font-family: $headlinefont;
+  font-size: 1.18em;
+  padding-top: 1em;
+  padding-bottom: .25em;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+main
+address {
+  font-size: .94em;
+  margin-bottom: .5em;
+}
+
+
+
+
+
+
+
+
+/*
+Lists
+*/
+
+ul {
+  font-size: 1em;
+  list-style-position: outside;
+}
+
+
+ol {
+  font-size: 1em;
+  margin-left: 1em;
+  list-style-position: outside;
+}
+
+
+
+ul li {
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  font-size: 1em;
+  margin-bottom: .25em;
+  list-style-type: disc;
+}
+
+
+ol li {
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  font-size: 1em;
+  margin-bottom: .25em;
+  list-style-type: decimal;
+}
+
+
+
+
+
+main ul {
+  padding-left:17px;
+}
+
+
+main td ul {
+  padding-left: .5em;
+}
+
+
+main td ol {
+  padding-left: .5em;
+}
+
+
+
+main ul li {
+  padding-left: 6px;
+  margin-bottom: 0;
+}
+
+
+
+main ol {
+  padding-left:17px;
+}
+
+
+
+
+main ol li {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Node display
+*/
+
+
+
+
+
+
+
+
+/*
+Special for front page of site
+*/
+
+
+
+
+
+
+/*
+
+*/
+
+
+
+
+
+/*
+Draggable table sort handle
+*/
+
+
+
+a.tabledrag-handle .handle {
+  font-family: "Lucida Grande", san-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+figure.align-left {
+  margin-left: 0;
+  width: 177px;
+  padding-right:17px;
+  float:left;
+}
+
+figure.align-left figcaption {
+  font-family: $sanseriffont;
+  margin-left: 0;
+  float:left;
+  font-size: .88em;
+  clear: both;
+  padding-left:0;
+
+}
+
+
+figure.align-right {
+  width: 177px;
+  padding-left:17px;
+  float:right;
+}
+
+figure.align-left figcaption {
+  font-family: $sanseriffont;
+  font-size: .88em;
+  clear: both;
+}
+
+
+
+
+
+.view-year-overview {
+  padding-top: 2em;
+
+}
+
+
+
+
+
+.field-name-monthline {
+  padding-top: 56px;
+  font-family: $sanseriffont;
+  font-size: .76em;
+  margin-bottom: .75em;
+  clear: both;
+  @include breakpoint($tab) {
+  padding-top: 12px;
+  }
+}
+
+
+
+
+
+/*
+Table styles
+*/
+
+table  {
+  margin: 1em 0 1.5em 0;
+  border: solid 1px gray;
+  width: 100%;
+}
+
+th  {
+  font-family: $sanseriffont;
+  font-size: .88em;
+  font-weight: 700;
+  border: solid 1px gray;
+  padding: 3px;
+  text-align:center;
+  vertical-align: bottom;
+}
+
+
+td  {
+  font-family: $sanseriffont;
+  vertical-align: top;
+  font-size: .82em;
+  border: solid 1px gray;
+  padding: 3px 5px;
+  text-align:left;
+}
+
+tr td:first-child {
+  text-align:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Subscripts and superscripts
+*/
+
+
+sup {
+vertical-align: super;
+font-size: smaller;
+line-height:0;
+}
+
+sub {
+vertical-align: sub;
+font-size: smaller;
+line-height:0;
+}
+
+
+
+
+
+
+
+
+main .sidebar1 ol {
+  padding-left:17px;
+}
+
+
+
+
+
+
+
+/*
+Static pages
+*/
+
+
+.node-type-page .l-contentbody p {
+  margin-bottom: 1em;
+}
+
+.node-type-page .l-contentbody dl {
+  margin-left: 2em;
+}
+
+.node-type-page .l-contentbody h4 {
+  font-weight: 700;
+  font-size: 1.18em;
+}
+
+
+
+
+/*
+Special elements
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.field-name-field-full-width-hero-image {
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main p.disclaimer  {
+  font-family: $sanseriffont;
+  line-height: 1.45;
+  font-size: .82em;
+  padding:.5em;
+  border:solid 1px gray;
+}
+
+
+
+
+
+
+
+
+.field-name-field-slug {
+  margin-bottom: .25em;
+  font-weight:700;
+  text-transform: uppercase;
+  font-family: $sanseriffont;
+  font-size: .94em;
+  color: #999;
+  letter-spacing: .02em;
+  clear: both;
+}
+
+.field-name-title-field {
+  font-family: $headlinefont;
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: .25em;
+  line-height: 1.3;
+}
+
+
+
+
+
+
+
+
+
+.hangingindent {
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
+
+
+
+
+
+.field-name-continue-reading {
+  margin-bottom: 1.5em;
+}
+
+
+
+
+
+
+
+/*
+Second sidebar (right rail)
+*/
+
+aside.sidebar--two h2 {
+  font-family: $sanseriffont;
+  font-size: 1.24em;
+  line-height: 1.3;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: $warmgray;
+  margin-bottom: .25em;
+}
+
+
+aside.sidebar--two li {
+  font-family: $sanseriffont;
+  font-size: .88em;
+  line-height: 1.3;
+}
+
+
+
+aside.sidebar--two p {
+  margin-left: 0;
+}
+
+
+
+
+
+#prefooter h2 {
+  font-family: $sanseriffont;
+  font-size: 1.24em;
+  line-height: 1.3;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: $warmgray;
+  margin-bottom: .5em;
+}
+
+
+
+
+
+
+
+/*
+news stories list most recent
+*/
+
+
+
+
+
+
+
+
+
+
+
+/*
+Pages
+*/
+
+
+.page-node .l-contentbody .field-name-title {
+  font-family: $headlinefont;
+  padding-top: 1em;
+  padding-bottom: .25em;
+  line-height: 1.3;
+  font-weight: 700;
+  font-size: 1.24em;
+  @include breakpoint($tab) {
+  font-size: 1.59em;
+  }
+  @include breakpoint($desk) {
+  font-size: 1.76em;
+  }
+}
+
+
+
+
+.page-node .field-name-body p {
+  font-family: $seriffont;
+  margin-bottom: .5em;
+  @include breakpoint($desk) {
+  padding-left: $leftrailmargin;
+  }
+}
+
+
+
+
+.page-node .field-name-node-link {
+  font-family: $seriffont;
+  margin-bottom: .5em;
+  font-weight: 700;
+  @include breakpoint($desk) {
+  padding-left: $leftrailmargin;
+  }
+}
+
+.page-node .field-name-field-blog-author-photo {
+  float:right;
+  padding-left: 10px;
+  width: 8em;
+  @include breakpoint($desk) {
+  float:left;
+  width: $leftraillive;
+  }
+}
+
+
+.page-node .field-name-body dl {
+  font-family: $seriffont;
+  margin-bottom: .5em;
+  @include breakpoint($desk) {
+  padding-left: $leftrailmargin;
+  }
+}
+
+
+
+.page-node .field-name-body .sidebar dl {
+  padding-left: 0;
+}
+
+.page-node .field-name-body .sidebar1 dl {
+  padding-left: 0;
+}
+
+.page-node .field-name-body .sidebar2 dl {
+  padding-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Miscellaneous
+*/
+
+
+
+
+
+
+
+.field-name-field-pdf-version {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  hyphens: auto;
+}
+
+
+
+
+
+
+/*
+*/
+
+
+.field-name-service-links-displays-linkedin-share-button
+ {
+  display: inline-block;
+  margin-right: 9px;
+  @include breakpoint($desk) {
+  margin-top: 2em;
+  float: left;
+  clear: both;
+  width: $leftraillive;
+  }
+}
+
+.field-name-service-links-displays-twitter-widget {
+  display: inline-block;
+  margin-right: 9px;
+  @include breakpoint($desk) {
+  float: left;
+  clear: both;
+  width: $leftraillive;
+  }
+}
+
+
+
+.field-name-service-links-displays-facebook-share
+ {
+  padding-top:3px;
+  display: inline-block;
+  @include breakpoint($desk) {
+  float: left;
+  clear: both;
+  width: $leftraillive;
+  }
+}
+
+
+
+
+
+.field-name-field-pretitle p {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #b4193f;
+  padding: 2px 6px 0 6px;
+  margin-top: 24px;
+  font-size: 2em;
+  width: 48px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/*
+Markup generated by theme_pager().
+*/
+ul.pager {
+  margin-top: 2em;
+  clear: both;
+  text-align: center;
+}
+
+ul.pager li {
+  background-image: none;
+  display: inline;
+  list-style-type: none;
+  padding: 0.5em;
+}
+
+
+/*
+Figures
+*/
+
+// Narrow Figures
+
+.chartbundle--narrow {
+border-top: solid 1px #888888;
+border-bottom: solid 1px #888888;
+padding: 0 0 0 0;
+margin-bottom: 1em;
+ @include breakpoint($desk) {
+  margin-left: $leftrailmargin;
+  }
+}
+
+.chartbundle--narrow h4 {
+margin-left: 0;
+font-size:1.18em;
+line-height:1.3;
+font-weight: 700;
+color:#333;
+}
+
+.l-contentbody .chartbundle--narrow p {
+  margin-left: 0;
+  font-family: $sanseriffont;
+  margin-top: .5em;
+  font-size:.8em;
+  line-height:1.45;
+  font-weight: 400;
+  color:#333;
+  padding-left: 0;
+}
+
+/* added specificity */
+
+
+.chartbundle--narrow img {
+margin-top: 3px;
+width:96%;
+}
+
+.chartbundle--narrow p.sourceline {
+  font-family: $sanseriffont;
+  margin-left: 0;
+  margin-top: .5em;
+  font-size:.8em;
+  line-height:1.45;
+  color:#333;
+  padding-left: 0;
+}
+
+
+
+
+
+
+
+/* Wide Figures */
+
+.chartbundle {
+width: 100%;
+border-top: solid 1px #888888;
+border-bottom: solid 1px #888888;
+padding: 0 0 0 0;
+margin-bottom: 1em;
+margin-left: 0;
+}
+
+.chartbundle h4 {
+font-size:1.18em;
+line-height:1.3;
+font-weight: 700;
+color:#333;
+margin-left: 0;
+}
+
+.l-contentbody .chartbundle p {
+  font-family: $sanseriffont;
+  margin-top: 0;
+  font-size:.88em;
+  line-height:1.45;
+  font-weight: 400;
+  color:#333;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.chartbundle img {
+width:96%;
+margin-top: 3px;
+margin-left: 0;
+}
+
+.chartbundle p.sourceline {
+  font-family: $sanseriffont;
+  margin-top: .5em;
+  font-size:.8em;
+  line-height:1.45;
+  color:#333;
+  padding-left: 0;
+}
+
+
+/* All Figures */
+
+div.chartbundle + div.chartbundle {
+border-top: 0;
+}
+
+
+
+
+
+/* Inline footnote in text */
+
+span.inlinefootnote {
+  background-color: #cceffe;
+  font-size: 90%;
+}
+
+
+/* emove extra spaces in lists of author names */
+
+
+.field-group-inline * {
+  display: inline !important;
+  float: none !important;
+}
+.field-group-inline .clearfix:after {
+  display: inline;
+}
+.field-group-label {
+  display: block !important;
+  font-weight: bold;
+}
+.field-group-inline-separator {
+  margin: 0;
+}
+
+
+
+.imagecredit {
+  font-family: $sanseriffont;
+  margin-top: .5em;
+  font-size:.8em;
+  line-height:1.45;
+  color:#333;
+}
+
+
+
+
+
+
+
+
+
+
