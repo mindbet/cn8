@@ -197,8 +197,10 @@ header {
 }
 
 /* @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic); */
+/*
+*/
 html {
-  font-family: "Libre Franklin", Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: 16px;
   color: #333;
   line-height: 1.5;
@@ -250,14 +252,14 @@ h1 {
   padding-top: 1em;
   padding-bottom: .333em;
   line-height: 1.4;
-  font-family: "Libre Franklin", Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
 }
 
 /*
-Title headline for Story
+Title headline for News update
 */
-.view-home-segmented .views-field-title {
-  font-family: "Libre Franklin", Verdana, san-serif;
+.view-home-segmented-0 .views-field-title {
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -266,34 +268,20 @@ Title headline for Story
   font-size: 1.3em;
 }
 
-.view-home-segmented .views-field-field-post-date {
+.view-home-segmented-0 .views-field-field-post-date {
   font-size: .9em;
   margin-bottom: 2px;
   margin-top: .75em;
   color: 888886;
 }
 
-.view-home-segmented .views-field-live-date .views-field-body p a {
+.view-home-segmented-0 .views-field-live-date .views-field-body p a {
   font-weight: 700;
   color: #0080c3;
 }
 
-.view-display-id-attachment_3 .views-field-title,
-.view-display-id-attachment_5 .views-field-title,
-.view-display-id-attachment_7 .views-field-title,
-.view-display-id-attachment_9 .views-field-title {
-  font-family: "Libre Franklin", Verdana, san-serif;
-  color: #0080c3;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  line-height: 1.4;
-  font-weight: 400;
-  font-size: 1.0em;
-}
-
 .view-home-segmented.view-display-id-attachment_7 .views-field-field-source-line {
-  font-family: "Libre Franklin", Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -303,9 +291,81 @@ Title headline for Story
 }
 
 .view-home-segmented.view-display-id-attachment_7 .view-header {
-  font-family: "Libre Franklin", Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-weight: 700;
   font-size: 1.1em;
+}
+
+/*
+Title headline for Fast take
+*/
+.view-display-id-block_1 .views-field-title,
+.view-display-id-block_3 .views-field-title,
+.view-display-id-block_5 .views-field-title,
+.view-display-id-block_7 .views-field-title,
+.view-display-id-block_9 .views-field-title {
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  color: #0080c3;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 4px;
+  margin-bottom: 0;
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 1.0em;
+}
+
+/*
+Source line for Fast take
+*/
+.view-display-id-block_1 .views-field-field-source-line,
+.view-display-id-block_3 .views-field-field-source-line,
+.view-display-id-block_5 .views-field-field-source-line,
+.view-display-id-block_7 .views-field-field-source-line,
+.view-display-id-block_9 .views-field-field-source-line {
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: .8em;
+}
+
+/*
+Fast take block
+*/
+.view-display-id-block_1,
+.view-display-id-block_3,
+.view-display-id-block_5,
+.view-display-id-block_7,
+.view-display-id-block_9 {
+  background-color: #efefef;
+  padding: 9px 6px 6px 9px;
+  margin-bottom: 1.5em;
+}
+
+/*
+Fast take block header
+*/
+.view-display-id-block_1 .view-header,
+.view-display-id-block_3 .view-header,
+.view-display-id-block_5 .view-header,
+.view-display-id-block_7 .view-header,
+.view-display-id-block_9 .view-header {
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+h1 {
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
+  font-weight: 700;
+  font-size: 1.3em;
 }
 
 h3 {
@@ -316,7 +376,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Libre Franklin", Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: 1.18em;
   padding-top: 1em;
   padding-bottom: .25em;
@@ -410,7 +470,7 @@ figure.align-left {
 }
 
 figure.align-left figcaption {
-  font-family: "Libre Franklin", Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   margin-left: 0;
   float: left;
   font-size: .88em;
@@ -425,26 +485,9 @@ figure.align-right {
 }
 
 figure.align-left figcaption {
-  font-family: "Libre Franklin", Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: .88em;
   clear: both;
-}
-
-.view-year-overview {
-  padding-top: 2em;
-}
-
-.field-name-monthline {
-  padding-top: 56px;
-  font-family: "Libre Franklin", Verdana, san-serif;
-  font-size: .76em;
-  margin-bottom: .75em;
-  clear: both;
-}
-@media (min-width: 768px) {
-  .field-name-monthline {
-    padding-top: 12px;
-  }
 }
 
 /*
@@ -457,7 +500,7 @@ table {
 }
 
 th {
-  font-family: "Libre Franklin", Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: .88em;
   font-weight: 700;
   border: solid 1px gray;
@@ -467,7 +510,7 @@ th {
 }
 
 td {
-  font-family: "Libre Franklin", Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   vertical-align: top;
   font-size: .82em;
   border: solid 1px gray;
@@ -494,60 +537,9 @@ sub {
   line-height: 0;
 }
 
-main .sidebar1 ol {
-  padding-left: 17px;
-}
-
-/*
-Static pages
-*/
-.node-type-page .l-contentbody p {
-  margin-bottom: 1em;
-}
-
-.node-type-page .l-contentbody dl {
-  margin-left: 2em;
-}
-
-.node-type-page .l-contentbody h4 {
-  font-weight: 700;
-  font-size: 1.18em;
-}
-
 /*
 Special elements
 */
-.field-name-field-full-width-hero-image {
-  margin-left: 0;
-}
-
-main p.disclaimer {
-  font-family: "Libre Franklin", Verdana, san-serif;
-  line-height: 1.45;
-  font-size: .82em;
-  padding: .5em;
-  border: solid 1px gray;
-}
-
-.field-name-field-slug {
-  margin-bottom: .25em;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Libre Franklin", Verdana, san-serif;
-  font-size: .94em;
-  color: #999;
-  letter-spacing: .02em;
-  clear: both;
-}
-
-.field-name-title-field {
-  font-family: "Libre Franklin", Verdana, san-serif;
-  font-weight: 700;
-  font-size: 2em;
-  margin-bottom: .25em;
-  line-height: 1.3;
-}
-
 .hangingindent {
   text-indent: -2em;
   padding-left: 2em;
@@ -561,7 +553,7 @@ main p.disclaimer {
 Second sidebar (right rail)
 */
 aside.sidebar--two h2 {
-  font-family: "Libre Franklin", Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: 1.24em;
   line-height: 1.3;
   font-weight: bold;
@@ -572,7 +564,7 @@ aside.sidebar--two h2 {
 }
 
 aside.sidebar--two li {
-  font-family: "Libre Franklin", Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: .88em;
   line-height: 1.3;
 }
@@ -581,109 +573,12 @@ aside.sidebar--two p {
   margin-left: 0;
 }
 
-#prefooter h2 {
-  font-family: "Libre Franklin", Verdana, san-serif;
-  font-size: 1.24em;
-  line-height: 1.3;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  color: #999;
-  margin-bottom: .5em;
-}
-
-/*
-news stories list most recent
-*/
 /*
 Pages
 */
-.page-node .l-contentbody .field-name-title {
-  font-family: "Libre Franklin", Verdana, san-serif;
-  padding-top: 1em;
-  padding-bottom: .25em;
-  line-height: 1.3;
-  font-weight: 700;
-  font-size: 1.24em;
-}
-@media (min-width: 768px) {
-  .page-node .l-contentbody .field-name-title {
-    font-size: 1.59em;
-  }
-}
-@media (min-width: 1024px) {
-  .page-node .l-contentbody .field-name-title {
-    font-size: 1.76em;
-  }
-}
-
-.page-node .field-name-body p {
-  font-family: "PT Serif";
-  margin-bottom: .5em;
-}
-@media (min-width: 1024px) {
-  .page-node .field-name-body p {
-    padding-left: 210px;
-  }
-}
-
-.page-node .field-name-node-link {
-  font-family: "PT Serif";
-  margin-bottom: .5em;
-  font-weight: 700;
-}
-@media (min-width: 1024px) {
-  .page-node .field-name-node-link {
-    padding-left: 210px;
-  }
-}
-
-.page-node .field-name-field-blog-author-photo {
-  float: right;
-  padding-left: 10px;
-  width: 8em;
-}
-@media (min-width: 1024px) {
-  .page-node .field-name-field-blog-author-photo {
-    float: left;
-    width: 180px;
-  }
-}
-
-.page-node .field-name-body dl {
-  font-family: "PT Serif";
-  margin-bottom: .5em;
-}
-@media (min-width: 1024px) {
-  .page-node .field-name-body dl {
-    padding-left: 210px;
-  }
-}
-
-.page-node .field-name-body .sidebar dl {
-  padding-left: 0;
-}
-
-.page-node .field-name-body .sidebar1 dl {
-  padding-left: 0;
-}
-
-.page-node .field-name-body .sidebar2 dl {
-  padding-left: 0;
-}
-
 /*
 Miscellaneous
 */
-.field-name-field-pdf-version {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-all;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
-}
-
 /*
 */
 .field-name-service-links-displays-linkedin-share-button {
@@ -723,18 +618,6 @@ Miscellaneous
   }
 }
 
-.field-name-field-pretitle p {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 700;
-  background-color: #b4193f;
-  padding: 2px 6px 0 6px;
-  margin-top: 24px;
-  font-size: 2em;
-  width: 48px;
-  text-align: center;
-}
-
 /*
 Markup generated by theme_pager().
 */
@@ -754,129 +637,8 @@ ul.pager li {
 /*
 Figures
 */
-.chartbundle--narrow {
-  border-top: solid 1px #888888;
-  border-bottom: solid 1px #888888;
-  padding: 0 0 0 0;
-  margin-bottom: 1em;
-}
-@media (min-width: 1024px) {
-  .chartbundle--narrow {
-    margin-left: 210px;
-  }
-}
-
-.chartbundle--narrow h4 {
-  margin-left: 0;
-  font-size: 1.18em;
-  line-height: 1.3;
-  font-weight: 700;
-  color: #333;
-}
-
-.l-contentbody .chartbundle--narrow p {
-  margin-left: 0;
-  font-family: "Libre Franklin", Verdana, san-serif;
-  margin-top: .5em;
-  font-size: .8em;
-  line-height: 1.45;
-  font-weight: 400;
-  color: #333;
-  padding-left: 0;
-}
-
-/* added specificity */
-.chartbundle--narrow img {
-  margin-top: 3px;
-  width: 96%;
-}
-
-.chartbundle--narrow p.sourceline {
-  font-family: "Libre Franklin", Verdana, san-serif;
-  margin-left: 0;
-  margin-top: .5em;
-  font-size: .8em;
-  line-height: 1.45;
-  color: #333;
-  padding-left: 0;
-}
-
-/* Wide Figures */
-.chartbundle {
-  width: 100%;
-  border-top: solid 1px #888888;
-  border-bottom: solid 1px #888888;
-  padding: 0 0 0 0;
-  margin-bottom: 1em;
-  margin-left: 0;
-}
-
-.chartbundle h4 {
-  font-size: 1.18em;
-  line-height: 1.3;
-  font-weight: 700;
-  color: #333;
-  margin-left: 0;
-}
-
-.l-contentbody .chartbundle p {
-  font-family: "Libre Franklin", Verdana, san-serif;
-  margin-top: 0;
-  font-size: .88em;
-  line-height: 1.45;
-  font-weight: 400;
-  color: #333;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-.chartbundle img {
-  width: 96%;
-  margin-top: 3px;
-  margin-left: 0;
-}
-
-.chartbundle p.sourceline {
-  font-family: "Libre Franklin", Verdana, san-serif;
-  margin-top: .5em;
-  font-size: .8em;
-  line-height: 1.45;
-  color: #333;
-  padding-left: 0;
-}
-
-/* All Figures */
-div.chartbundle + div.chartbundle {
-  border-top: 0;
-}
-
-/* Inline footnote in text */
-span.inlinefootnote {
-  background-color: #cceffe;
-  font-size: 90%;
-}
-
-/* emove extra spaces in lists of author names */
-.field-group-inline * {
-  display: inline !important;
-  float: none !important;
-}
-
-.field-group-inline .clearfix:after {
-  display: inline;
-}
-
-.field-group-label {
-  display: block !important;
-  font-weight: bold;
-}
-
-.field-group-inline-separator {
-  margin: 0;
-}
-
 .imagecredit {
-  font-family: "Libre Franklin", Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   margin-top: .5em;
   font-size: .8em;
   line-height: 1.45;
@@ -1076,7 +838,7 @@ span.inlinefootnote {
 }
 
 .block-login-register a {
-  font-family: "Libre Franklin", Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: .94em;
   text-transform: uppercase;
   color: white;
