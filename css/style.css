@@ -200,15 +200,11 @@ header {
 /*
 */
 html {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: 16px;
   color: #333;
   line-height: 1.5;
   background-color: #f7f7f7;
-}
-
-p {
-  margin-bottom: 1em;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
 }
 
 /* f7f8f8 light gray */
@@ -252,14 +248,14 @@ h1 {
   padding-top: 1em;
   padding-bottom: .333em;
   line-height: 1.4;
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
 }
 
 /*
 Title headline for News update
 */
 .view-home-segmented-0 .views-field-title {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -273,6 +269,7 @@ Title headline for News update
   margin-bottom: 2px;
   margin-top: .75em;
   color: 888886;
+  clear: both;
 }
 
 .view-home-segmented-0 .views-field-live-date .views-field-body p a {
@@ -280,8 +277,12 @@ Title headline for News update
   color: #0080c3;
 }
 
+.view-home-segmented-0 .field--name-body a {
+  font-weight: 700;
+}
+
 .view-home-segmented.view-display-id-attachment_7 .views-field-field-source-line {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -291,7 +292,7 @@ Title headline for News update
 }
 
 .view-home-segmented.view-display-id-attachment_7 .view-header {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   font-weight: 700;
   font-size: 1.1em;
 }
@@ -304,7 +305,7 @@ Title headline for Fast take
 .view-display-id-block_5 .views-field-title,
 .view-display-id-block_7 .views-field-title,
 .view-display-id-block_9 .views-field-title {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   color: #0080c3;
   padding-top: 0;
   padding-bottom: 0;
@@ -323,7 +324,7 @@ Source line for Fast take
 .view-display-id-block_5 .views-field-field-source-line,
 .view-display-id-block_7 .views-field-field-source-line,
 .view-display-id-block_9 .views-field-field-source-line {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -335,14 +336,24 @@ Source line for Fast take
 /*
 Fast take block
 */
-.view-display-id-block_1,
-.view-display-id-block_3,
-.view-display-id-block_5,
-.view-display-id-block_7,
-.view-display-id-block_9 {
+.view-display-id-block_1 .view-content,
+.view-display-id-block_3 .view-content,
+.view-display-id-block_5 .view-content,
+.view-display-id-block_7 .view-content,
+.view-display-id-block_9 .view-content {
   background-color: #efefef;
-  padding: 9px 6px 6px 9px;
+  padding: 3px 6px 6px 9px;
   margin-bottom: 1.5em;
+}
+
+.view-display-id-block_1 .view-header,
+.view-display-id-block_3 .view-header,
+.view-display-id-block_5 .view-header,
+.view-display-id-block_7 .view-header,
+.view-display-id-block_9 .view-header {
+  background-color: #efefef;
+  padding: 9px 6px 0 9px;
+  margin-top: 12px;
 }
 
 /*
@@ -353,13 +364,13 @@ Fast take block header
 .view-display-id-block_5 .view-header,
 .view-display-id-block_7 .view-header,
 .view-display-id-block_9 .view-header {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   font-weight: 700;
   font-size: 1.1em;
 }
 
 h1 {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -376,7 +387,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: 1.18em;
   padding-top: 1em;
   padding-bottom: .25em;
@@ -458,7 +469,7 @@ Special for front page of site
 /*
 Draggable table sort handle
 */
-a.tabledrag-handle .handle {
+.path-sorting-view td.views-field-title a.tabledrag-handle {
   font-family: "Lucida Grande", san-serif;
 }
 
@@ -470,7 +481,7 @@ figure.align-left {
 }
 
 figure.align-left figcaption {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   margin-left: 0;
   float: left;
   font-size: .88em;
@@ -485,7 +496,7 @@ figure.align-right {
 }
 
 figure.align-left figcaption {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: .88em;
   clear: both;
 }
@@ -500,7 +511,7 @@ table {
 }
 
 th {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: .88em;
   font-weight: 700;
   border: solid 1px gray;
@@ -510,7 +521,7 @@ th {
 }
 
 td {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   vertical-align: top;
   font-size: .82em;
   border: solid 1px gray;
@@ -552,24 +563,24 @@ Special elements
 /*
 Second sidebar (right rail)
 */
-aside.sidebar--two h2 {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
-  font-size: 1.24em;
+aside.layout-sidebar-second h2 {
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-size: 1.0em;
   line-height: 1.3;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: .06em;
+  letter-spacing: .02em;
   color: #999;
-  margin-bottom: .25em;
+  margin: 1em 0 .25em 0;
 }
 
-aside.sidebar--two li {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+aside.layout-sidebar-second li {
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: .88em;
   line-height: 1.3;
 }
 
-aside.sidebar--two p {
+aside.layout-sidebar-second p {
   margin-left: 0;
 }
 
@@ -638,7 +649,7 @@ ul.pager li {
 Figures
 */
 .imagecredit {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   margin-top: .5em;
   font-size: .8em;
   line-height: 1.45;
@@ -647,19 +658,78 @@ Figures
 
 /* Site logo and slogan */
 /* Mobile version of site logo and slogan */
-/*
-
-#block-mobilemenu {
+.menu--mobile-menu {
   background-color: red;
   padding-top: 8px;
   width: 100%;
   height: 44px;
   position: fixed;
   z-index: 100;
-  @include  breakpoint($tab) {
-  display: none;
+}
+@media (min-width: 768px) {
+  .menu--mobile-menu {
+    display: none;
   }
 }
+
+.menu--mobile-menu ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.menu--mobile-menu ul li {
+  display: inline;
+  padding: 20px 20px 18px 20px;
+  border-right: solid 2px white;
+}
+
+.menu--mobile-menu ul li a {
+  color: white;
+}
+
+/* Mobile-only admin version of site logo and slogan */
+#block-adminshortcuts-2, .menu--admin-shortcuts {
+  background-color: green;
+  padding-top: 8px;
+  width: 100%;
+  height: 44px;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+}
+
+#block-adminshortcuts-2 ul,
+.menu--admin-shortcuts ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+#block-adminshortcuts-2 ul li,
+.menu--admin-shortcuts ul li {
+  display: inline;
+  padding: 14px 20px 18px 20px;
+  border-right: solid 2px white;
+  font-size: .75em;
+}
+@media (min-width: 768px) {
+  #block-adminshortcuts-2 ul li,
+  .menu--admin-shortcuts ul li {
+    font-size: 1em;
+  }
+}
+
+#block-adminshortcuts-2 ul li a,
+.menu--admin-shortcuts ul li a {
+  color: white;
+}
+
+#block-adminshortcuts-2 h2,
+.menu--admin-shortcuts h2 {
+  display: none;
+}
+
+/*
+
 
 .topbandformobile .sitenameformobile {
   font-size: 18px;
@@ -674,6 +744,7 @@ Figures
   padding-right: 16px;
   @include span(last 5 of 12);
 }
+
 */
 /* Tablet and desk version of site logo and slogan */
 .block-system-branding-block {
@@ -838,8 +909,18 @@ Figures
 }
 
 .block-login-register a {
-  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: .94em;
   text-transform: uppercase;
   color: white;
+}
+
+.image-style-left-side-240x120 {
+  float: left;
+  padding-right: 16px;
+}
+
+.image-style-right-side-240x120 {
+  float: right;
+  padding-left: 16px;
 }
