@@ -7,6 +7,7 @@ version: 1.0
 core: 8.x
 libraries:
   - cn8/global-styling
+  - cn8/global-scripts
 regions:
   header: Header
   content: Content  # the content region is required

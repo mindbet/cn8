@@ -41,30 +41,35 @@
 
 
 
-/* Mobile-only admin version of site logo and slogan */
+/* Admin shortcuts at bottom */
 
-#block-adminshortcuts-2, .menu--admin-shortcuts {
-  background-color: green;
+footer .menu--admin-shortcuts {
+  background-color: purple;
   padding-top: 8px;
-  width: 100%;
   height: 44px;
   position: fixed;
+  width: 100%;
   bottom: 0;
   z-index: 100;
+  @include breakpoint($desk) {
+    width: $desk;
+  }
 }
 
 
-#block-adminshortcuts-2 ul,
-.menu--admin-shortcuts ul
-  {
+/*     width: calc(#{$desk} - 30px); */
+
+
+
+
+footer .menu--admin-shortcuts ul  {
   list-style-type: none;
   margin-left: 0;
 }
 
 
 
-#block-adminshortcuts-2 ul li,
-.menu--admin-shortcuts ul li {
+footer .menu--admin-shortcuts ul li {
   display: inline;
   padding: 14px 20px 18px 20px;
   border-right: solid 2px white;
@@ -75,15 +80,64 @@
 }
 
 
-#block-adminshortcuts-2 ul li a,
+footer .menu--admin-shortcuts ul li a,
 .menu--admin-shortcuts ul li a  {
   color: white;
 }
 
-#block-adminshortcuts-2 h2,
+footer .menu--admin-shortcuts h2  {
+  display: none;
+}
+
+
+
+
+
+
+
+/* Admin shortcuts at right */
+
+
+aside #block-adminshortcuts-2, .menu--admin-shortcuts {
+  background-color: purple;
+  position: static;
+  padding-top: 8px;
+  height: 44px;
+}
+
+
+aside #block-adminshortcuts-2 ul,
+.menu--admin-shortcuts ul
+  {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+
+
+aside #block-adminshortcuts-2 ul li,
+.menu--admin-shortcuts ul li {
+  padding: 14px 20px 18px 20px;
+  border-right: solid 2px white;
+  font-size: .75em;
+  @include  breakpoint($tab) {
+  font-size: 1em;
+  }
+}
+
+
+aside #block-adminshortcuts-2 ul li a,
+.menu--admin-shortcuts ul li a  {
+  color: white;
+}
+
+aside #block-adminshortcuts-2 h2,
 .menu--admin-shortcuts h2  {
   display: none;
 }
+
+
+
 
 
 
@@ -117,10 +171,11 @@
   display: none;
   @include  breakpoint($tab) {
   display: block;
-  @include span(9 of 12);
+  @include span(9 of 16);
+  padding-left:20px;
   }
   @include  breakpoint($desk) {
-  @include span(9 of 12);
+  @include span(9 of 16);
   }
 }
 
@@ -134,11 +189,11 @@
   display: none;
   @include  breakpoint($tab) {
   display: block;
-  @include span(last 3 of 12);
+  @include span(last 3 of 16);
   }
   @include  breakpoint($desk) {
   display: block;
-  @include span(last 3 of 12);
+  @include span(last 3 of 16);
   }
 }
 
@@ -162,11 +217,11 @@
   @include  breakpoint($tab) {
   display: block;
   margin-bottom: 2em;
-  @include span(12);
+  @include span(16);
   z-index: 100;
   }
   @include  breakpoint($desk) {
-  width: 994px;
+  width: $desk;
   display: block;
   }
 }

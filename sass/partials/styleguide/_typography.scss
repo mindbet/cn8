@@ -9,9 +9,9 @@
 
 $seriffont: 'PT Serif';
 
-$sanseriffont: 'Lucida Grande','Libre Franklin', Helvetica, Verdana, san-serif;
+$sanseriffont: 'Libre Franklin', Helvetica, Verdana, san-serif;
 
-$headlinefont: 'Lucida Grande','Libre Franklin', Helvetica, Verdana, san-serif;
+$headlinefont: 'Libre Franklin', Helvetica, Verdana, san-serif;
 
 
 
@@ -26,6 +26,13 @@ html {
 
 
 p {
+}
+
+
+
+
+.page-node-type-book p {
+  margin-bottom: 1em;
 }
 
 
@@ -76,18 +83,6 @@ i,em {
 
 
 
-/*
-Headings
-*/
-
-h1 {
-  font-size: 2em;
-  padding-top: 1em;
-  padding-bottom: .333em;
-  line-height: 1.4;
-  font-family: $headlinefont;
-}
-
 
 /*
 Title headline for News update
@@ -95,7 +90,11 @@ Title headline for News update
 
 
 
-.view-home-segmented-0 .views-field-title  {
+.block-views-blockhome-seg-3-block-6 .views-field-title,
+.block-views-blockhome-seg-3-block-7 .views-field-title,
+.block-views-blockhome-seg-3-block-8 .views-field-title,
+.block-views-blockhome-seg-3-block-9 .views-field-title,
+.block-views-blockhome-seg-3-block-10 .views-field-title  {
   font-family: $headlinefont;
   padding-top: 0;
   padding-bottom: 0;
@@ -105,8 +104,15 @@ Title headline for News update
   font-size: 1.3em;
 }
 
+/*
+Post date for News update
+*/
 
-.view-home-segmented-0 .views-field-field-post-date {
+.block-views-blockhome-seg-3-block-6 .views-field-field-post-date,
+.block-views-blockhome-seg-3-block-7 .views-field-field-post-date,
+.block-views-blockhome-seg-3-block-8 .views-field-field-post-date,
+.block-views-blockhome-seg-3-block-9 .views-field-field-post-date,
+.block-views-blockhome-seg-3-block-10 .views-field-field-post-date {
   font-size: .9em;
   margin-bottom: 2px;
   margin-top: .75em;
@@ -115,20 +121,36 @@ Title headline for News update
 }
 
 
-.view-home-segmented-0 .views-field-live-date .views-field-body p a {
+
+/*
+Links in News update get bolded, dark blue color
+*/
+
+.block-views-blockhome-seg-3-block-6 .views-field-body p a,
+.block-views-blockhome-seg-3-block-7 .views-field-body p a,
+.block-views-blockhome-seg-3-block-8 .views-field-body p a,
+.block-views-blockhome-seg-3-block-9 .views-field-body p a,
+.block-views-blockhome-seg-3-block-10 .views-field-body p a {
   font-weight: 700;
   color: $darkblue;
 }
 
 
+/*
+Links in News update single node display get bolded, dark blue color
+*/
 
-.view-home-segmented-0 .field--name-body a {
+.page-node-type-news-update p a {
   font-weight: 700;
+  color: $darkblue;
 }
 
 
-
-.view-home-segmented.view-display-id-attachment_7 .views-field-field-source-line  {
+.block-views-blockhome-seg-3-block-6 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-7 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-8 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-9 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-10 .views-field-field-source-line  {
   font-family: $headlinefont;
   padding-top: 0;
   padding-bottom: 0;
@@ -139,13 +161,15 @@ Title headline for News update
 }
 
 
-.view-home-segmented.view-display-id-attachment_7 .view-header {
-  font-family: $headlinefont;
-  font-weight: 700;
-  font-size: 1.1em;
+
+
+
+.views-field-edit-node a {
+  font-size: .8em;
+  background-color: $darkblue;
+  padding: 2px 3px 2px 3px;
+  color: white;
 }
-
-
 
 
 /*
@@ -154,11 +178,11 @@ Title headline for Fast take
 
 
 
-.view-display-id-block_1 .views-field-title,
-.view-display-id-block_3 .views-field-title,
-.view-display-id-block_5 .views-field-title,
-.view-display-id-block_7 .views-field-title,
-.view-display-id-block_9 .views-field-title
+.block-views-blockhome-seg-3-block-1 .views-field-title,
+.block-views-blockhome-seg-3-block-2 .views-field-title,
+.block-views-blockhome-seg-3-block-3 .views-field-title,
+.block-views-blockhome-seg-3-block-4 .views-field-title,
+.block-views-blockhome-seg-3-block-5 .views-field-title
   {
   font-family: $headlinefont;
   color: $darkblue;
@@ -176,11 +200,11 @@ Title headline for Fast take
 Source line for Fast take
 */
 
-.view-display-id-block_1 .views-field-field-source-line,
-.view-display-id-block_3 .views-field-field-source-line,
-.view-display-id-block_5 .views-field-field-source-line,
-.view-display-id-block_7 .views-field-field-source-line,
-.view-display-id-block_9 .views-field-field-source-line
+.block-views-blockhome-seg-3-block-1 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-2 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-3 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-4 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-5 .views-field-field-source-line
   {
   font-family: $headlinefont;
   padding-top: 0;
@@ -197,11 +221,11 @@ Fast take block
 */
 
 
-.view-display-id-block_1 .view-content,
-.view-display-id-block_3 .view-content,
-.view-display-id-block_5 .view-content,
-.view-display-id-block_7 .view-content,
-.view-display-id-block_9 .view-content
+.block-views-blockhome-seg-3-block-1 .view-content,
+.block-views-blockhome-seg-3-block-2 .view-content,
+.block-views-blockhome-seg-3-block-3 .view-content,
+.block-views-blockhome-seg-3-block-4 .view-content,
+.block-views-blockhome-seg-3-block-5 .view-content
  {
   background-color: #efefef;
   padding: 3px 6px 6px 9px;
@@ -209,19 +233,26 @@ Fast take block
 }
 
 
-.view-display-id-block_1 .view-header,
-.view-display-id-block_3 .view-header,
-.view-display-id-block_5 .view-header,
-.view-display-id-block_7 .view-header,
-.view-display-id-block_9 .view-header
+
+
+/*
+Fast take block header
+*/
+
+
+.block-views-blockhome-seg-3-block-1 .view-header,
+.block-views-blockhome-seg-3-block-2 .view-header,
+.block-views-blockhome-seg-3-block-3 .view-header,
+.block-views-blockhome-seg-3-block-4 .view-header,
+.block-views-blockhome-seg-3-block-5 .view-header
  {
   background-color: #efefef;
   padding: 9px 6px 0 9px;
   margin-top: 12px;
+  font-family: $headlinefont;
+  font-weight: 700;
+  font-size: 1.1em;
 }
-
-
-
 
 
 
@@ -231,38 +262,36 @@ Fast take block
 
 
 /*
-Fast take block header
+Headings
 */
-.view-display-id-block_1 .view-header,
-.view-display-id-block_3 .view-header,
-.view-display-id-block_5 .view-header,
-.view-display-id-block_7 .view-header,
-.view-display-id-block_9 .view-header,
- {
-  font-family: $headlinefont;
-  font-weight: 700;
-  font-size: 1.1em;
-}
-
-
-
 
 h1 {
-  font-family: $headlinefont;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
+  font-size: 2.25em;
+  padding-top: 1em;
+  padding-bottom: .333em;
   line-height: 1.4;
+  font-family: $headlinefont;
   font-weight: 700;
-  font-size: 1.3em;
 }
+
+
+
+h2 {
+  font-size: 1.75em;
+  padding-top: 1em;
+  padding-bottom: .333em;
+  line-height: 1.4;
+  font-family: $headlinefont;
+  font-weight: 700;
+}
+
 
 
 
 
 
 h3 {
-  font-size: 1.41em;
+  font-size: 1.5em;
   padding-top: 1em;
   padding-bottom: .25em;
   font-weight: 700;
@@ -274,11 +303,23 @@ h3 {
 
 h4 {
   font-family: $headlinefont;
-  font-size: 1.18em;
+  font-size: 1.25em;
   padding-top: 1em;
   padding-bottom: .25em;
   font-weight: 700;
 }
+
+
+
+
+h5 {
+  font-family: $headlinefont;
+  font-size: 1.125em;
+  padding-top: 1em;
+  padding-bottom: .25em;
+  font-weight: 700;
+}
+
 
 
 
@@ -670,7 +711,6 @@ Miscellaneous
   margin-top: 2em;
   float: left;
   clear: both;
-  width: $leftraillive;
   }
 }
 
@@ -680,7 +720,6 @@ Miscellaneous
   @include breakpoint($desk) {
   float: left;
   clear: both;
-  width: $leftraillive;
   }
 }
 
@@ -693,7 +732,6 @@ Miscellaneous
   @include breakpoint($desk) {
   float: left;
   clear: both;
-  width: $leftraillive;
   }
 }
 

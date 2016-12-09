@@ -100,8 +100,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 header {
   width: 100%;
   float: left;
-  padding-left: 1.38889%;
-  padding-right: 1.38889%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .l-main_menu {
@@ -110,73 +110,52 @@ header {
 
 /* Story layout */
 .region-content {
-  padding: 16px  16px 0  16px;
+  padding: 16px  0 44px  16px;
 }
 @media (min-width: 768px) {
   .region-content {
-    width: 66.66667%;
+    width: 68.18182%;
     float: left;
-    padding-left: 1.38889%;
-    padding-right: 1.38889%;
+    margin-right: 1.81818%;
   }
 }
 @media (min-width: 1024px) {
   .region-content {
-    width: 75%;
+    width: 74.54545%;
     float: left;
-    padding-left: 1.38889%;
-    padding-right: 1.38889%;
+    margin-right: 1.81818%;
   }
 }
 
 .layout-sidebar-second {
   background-color: #FAF2FD;
-  margin-top: 2em;
-  padding: 1em 1em 1em 1em;
+  margin-top: 26px;
+  padding: 8px 24px 16px 16px;
 }
 @media (min-width: 768px) {
   .layout-sidebar-second {
-    width: 33.33333%;
+    width: 30%;
     float: right;
-    padding-left: 1.38889%;
-    padding-right: 1.38889%;
+    margin-right: 0;
   }
 }
 @media (min-width: 1024px) {
   .layout-sidebar-second {
-    width: 25%;
+    width: 23.63636%;
     float: right;
-    padding-left: 1.38889%;
-    padding-right: 1.38889%;
+    margin-right: 0;
   }
 }
 
 .region-footer {
-  width: 133.33333%;
+  width: 100%;
   float: left;
-  padding-left: 1.38889%;
-  padding-right: 1.38889%;
+  margin-left: 0;
+  margin-right: 0;
   clear: both;
+  width: 100%;
 }
 
-#cboxOverlay {
-  background-color: white;
-  opacity: .4;
-}
-
-/*
-
-#prefooter {
-  @include add-grid(2);
-  @include add-grid(2 at $tab);
-  @include add-grid(16 at $desk);
-  @include clearfix;
-  margin-top: 2rem;
-  clear: both;
-  padding: 20px 10px 10px 20px;
-  background-color: #515151;
-}
-*/
 #footer {
   clear: both;
   padding-bottom: 110px;
@@ -204,7 +183,11 @@ html {
   color: #333;
   line-height: 1.5;
   background-color: #f7f7f7;
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+}
+
+.page-node-type-book p {
+  margin-bottom: 1em;
 }
 
 /* f7f8f8 light gray */
@@ -241,21 +224,14 @@ i, em {
 }
 
 /*
-Headings
-*/
-h1 {
-  font-size: 2em;
-  padding-top: 1em;
-  padding-bottom: .333em;
-  line-height: 1.4;
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
-}
-
-/*
 Title headline for News update
 */
-.view-home-segmented-0 .views-field-title {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+.block-views-blockhome-seg-3-block-6 .views-field-title,
+.block-views-blockhome-seg-3-block-7 .views-field-title,
+.block-views-blockhome-seg-3-block-8 .views-field-title,
+.block-views-blockhome-seg-3-block-9 .views-field-title,
+.block-views-blockhome-seg-3-block-10 .views-field-title {
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -264,7 +240,14 @@ Title headline for News update
   font-size: 1.3em;
 }
 
-.view-home-segmented-0 .views-field-field-post-date {
+/*
+Post date for News update
+*/
+.block-views-blockhome-seg-3-block-6 .views-field-field-post-date,
+.block-views-blockhome-seg-3-block-7 .views-field-field-post-date,
+.block-views-blockhome-seg-3-block-8 .views-field-field-post-date,
+.block-views-blockhome-seg-3-block-9 .views-field-field-post-date,
+.block-views-blockhome-seg-3-block-10 .views-field-field-post-date {
   font-size: .9em;
   margin-bottom: 2px;
   margin-top: .75em;
@@ -272,17 +255,32 @@ Title headline for News update
   clear: both;
 }
 
-.view-home-segmented-0 .views-field-live-date .views-field-body p a {
+/*
+Links in News update get bolded, dark blue color
+*/
+.block-views-blockhome-seg-3-block-6 .views-field-body p a,
+.block-views-blockhome-seg-3-block-7 .views-field-body p a,
+.block-views-blockhome-seg-3-block-8 .views-field-body p a,
+.block-views-blockhome-seg-3-block-9 .views-field-body p a,
+.block-views-blockhome-seg-3-block-10 .views-field-body p a {
   font-weight: 700;
   color: #0080c3;
 }
 
-.view-home-segmented-0 .field--name-body a {
+/*
+Links in News update single node display get bolded, dark blue color
+*/
+.page-node-type-news-update p a {
   font-weight: 700;
+  color: #0080c3;
 }
 
-.view-home-segmented.view-display-id-attachment_7 .views-field-field-source-line {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+.block-views-blockhome-seg-3-block-6 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-7 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-8 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-9 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-10 .views-field-field-source-line {
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -291,21 +289,22 @@ Title headline for News update
   font-size: .8em;
 }
 
-.view-home-segmented.view-display-id-attachment_7 .view-header {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
-  font-weight: 700;
-  font-size: 1.1em;
+.views-field-edit-node a {
+  font-size: .8em;
+  background-color: #0080c3;
+  padding: 2px 3px 2px 3px;
+  color: white;
 }
 
 /*
 Title headline for Fast take
 */
-.view-display-id-block_1 .views-field-title,
-.view-display-id-block_3 .views-field-title,
-.view-display-id-block_5 .views-field-title,
-.view-display-id-block_7 .views-field-title,
-.view-display-id-block_9 .views-field-title {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+.block-views-blockhome-seg-3-block-1 .views-field-title,
+.block-views-blockhome-seg-3-block-2 .views-field-title,
+.block-views-blockhome-seg-3-block-3 .views-field-title,
+.block-views-blockhome-seg-3-block-4 .views-field-title,
+.block-views-blockhome-seg-3-block-5 .views-field-title {
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   color: #0080c3;
   padding-top: 0;
   padding-bottom: 0;
@@ -319,12 +318,12 @@ Title headline for Fast take
 /*
 Source line for Fast take
 */
-.view-display-id-block_1 .views-field-field-source-line,
-.view-display-id-block_3 .views-field-field-source-line,
-.view-display-id-block_5 .views-field-field-source-line,
-.view-display-id-block_7 .views-field-field-source-line,
-.view-display-id-block_9 .views-field-field-source-line {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+.block-views-blockhome-seg-3-block-1 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-2 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-3 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-4 .views-field-field-source-line,
+.block-views-blockhome-seg-3-block-5 .views-field-field-source-line {
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -336,59 +335,71 @@ Source line for Fast take
 /*
 Fast take block
 */
-.view-display-id-block_1 .view-content,
-.view-display-id-block_3 .view-content,
-.view-display-id-block_5 .view-content,
-.view-display-id-block_7 .view-content,
-.view-display-id-block_9 .view-content {
+.block-views-blockhome-seg-3-block-1 .view-content,
+.block-views-blockhome-seg-3-block-2 .view-content,
+.block-views-blockhome-seg-3-block-3 .view-content,
+.block-views-blockhome-seg-3-block-4 .view-content,
+.block-views-blockhome-seg-3-block-5 .view-content {
   background-color: #efefef;
   padding: 3px 6px 6px 9px;
   margin-bottom: 1.5em;
 }
 
-.view-display-id-block_1 .view-header,
-.view-display-id-block_3 .view-header,
-.view-display-id-block_5 .view-header,
-.view-display-id-block_7 .view-header,
-.view-display-id-block_9 .view-header {
-  background-color: #efefef;
-  padding: 9px 6px 0 9px;
-  margin-top: 12px;
-}
-
 /*
 Fast take block header
 */
-.view-display-id-block_1 .view-header,
-.view-display-id-block_3 .view-header,
-.view-display-id-block_5 .view-header,
-.view-display-id-block_7 .view-header,
-.view-display-id-block_9 .view-header {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+.block-views-blockhome-seg-3-block-1 .view-header,
+.block-views-blockhome-seg-3-block-2 .view-header,
+.block-views-blockhome-seg-3-block-3 .view-header,
+.block-views-blockhome-seg-3-block-4 .view-header,
+.block-views-blockhome-seg-3-block-5 .view-header {
+  background-color: #efefef;
+  padding: 9px 6px 0 9px;
+  margin-top: 12px;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-weight: 700;
   font-size: 1.1em;
 }
 
+/*
+Headings
+*/
 h1 {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
+  font-size: 2.25em;
+  padding-top: 1em;
+  padding-bottom: .333em;
   line-height: 1.4;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-weight: 700;
-  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 1.75em;
+  padding-top: 1em;
+  padding-bottom: .333em;
+  line-height: 1.4;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-weight: 700;
 }
 
 h3 {
-  font-size: 1.41em;
+  font-size: 1.5em;
   padding-top: 1em;
   padding-bottom: .25em;
   font-weight: 700;
 }
 
 h4 {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
-  font-size: 1.18em;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-size: 1.25em;
+  padding-top: 1em;
+  padding-bottom: .25em;
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-size: 1.125em;
   padding-top: 1em;
   padding-bottom: .25em;
   font-weight: 700;
@@ -481,7 +492,7 @@ figure.align-left {
 }
 
 figure.align-left figcaption {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   margin-left: 0;
   float: left;
   font-size: .88em;
@@ -496,7 +507,7 @@ figure.align-right {
 }
 
 figure.align-left figcaption {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: .88em;
   clear: both;
 }
@@ -511,7 +522,7 @@ table {
 }
 
 th {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: .88em;
   font-weight: 700;
   border: solid 1px gray;
@@ -521,7 +532,7 @@ th {
 }
 
 td {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   vertical-align: top;
   font-size: .82em;
   border: solid 1px gray;
@@ -564,7 +575,7 @@ Special elements
 Second sidebar (right rail)
 */
 aside.layout-sidebar-second h2 {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: 1.0em;
   line-height: 1.3;
   font-weight: bold;
@@ -575,7 +586,7 @@ aside.layout-sidebar-second h2 {
 }
 
 aside.layout-sidebar-second li {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: .88em;
   line-height: 1.3;
 }
@@ -601,7 +612,6 @@ Miscellaneous
     margin-top: 2em;
     float: left;
     clear: both;
-    width: 180px;
   }
 }
 
@@ -613,7 +623,6 @@ Miscellaneous
   .field-name-service-links-displays-twitter-widget {
     float: left;
     clear: both;
-    width: 180px;
   }
 }
 
@@ -625,7 +634,6 @@ Miscellaneous
   .field-name-service-links-displays-facebook-share {
     float: left;
     clear: both;
-    width: 180px;
   }
 }
 
@@ -649,7 +657,7 @@ ul.pager li {
 Figures
 */
 .imagecredit {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   margin-top: .5em;
   font-size: .8em;
   line-height: 1.45;
@@ -687,43 +695,82 @@ Figures
   color: white;
 }
 
-/* Mobile-only admin version of site logo and slogan */
-#block-adminshortcuts-2, .menu--admin-shortcuts {
-  background-color: green;
+/* Admin shortcuts at bottom */
+footer .menu--admin-shortcuts {
+  background-color: purple;
   padding-top: 8px;
-  width: 100%;
   height: 44px;
   position: fixed;
+  width: 100%;
   bottom: 0;
   z-index: 100;
 }
+@media (min-width: 1024px) {
+  footer .menu--admin-shortcuts {
+    width: 1024px;
+  }
+}
 
-#block-adminshortcuts-2 ul,
-.menu--admin-shortcuts ul {
+/*     width: calc(1024px - 30px); */
+footer .menu--admin-shortcuts ul {
   list-style-type: none;
   margin-left: 0;
 }
 
-#block-adminshortcuts-2 ul li,
-.menu--admin-shortcuts ul li {
+footer .menu--admin-shortcuts ul li {
   display: inline;
   padding: 14px 20px 18px 20px;
   border-right: solid 2px white;
   font-size: .75em;
 }
 @media (min-width: 768px) {
-  #block-adminshortcuts-2 ul li,
+  footer .menu--admin-shortcuts ul li {
+    font-size: 1em;
+  }
+}
+
+footer .menu--admin-shortcuts ul li a,
+.menu--admin-shortcuts ul li a {
+  color: white;
+}
+
+footer .menu--admin-shortcuts h2 {
+  display: none;
+}
+
+/* Admin shortcuts at right */
+aside #block-adminshortcuts-2, .menu--admin-shortcuts {
+  background-color: purple;
+  position: static;
+  padding-top: 8px;
+  height: 44px;
+}
+
+aside #block-adminshortcuts-2 ul,
+.menu--admin-shortcuts ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+aside #block-adminshortcuts-2 ul li,
+.menu--admin-shortcuts ul li {
+  padding: 14px 20px 18px 20px;
+  border-right: solid 2px white;
+  font-size: .75em;
+}
+@media (min-width: 768px) {
+  aside #block-adminshortcuts-2 ul li,
   .menu--admin-shortcuts ul li {
     font-size: 1em;
   }
 }
 
-#block-adminshortcuts-2 ul li a,
+aside #block-adminshortcuts-2 ul li a,
 .menu--admin-shortcuts ul li a {
   color: white;
 }
 
-#block-adminshortcuts-2 h2,
+aside #block-adminshortcuts-2 h2,
 .menu--admin-shortcuts h2 {
   display: none;
 }
@@ -753,18 +800,17 @@ Figures
 @media (min-width: 768px) {
   .block-system-branding-block {
     display: block;
-    width: 75%;
+    width: 55.45455%;
     float: left;
-    padding-left: 1.38889%;
-    padding-right: 1.38889%;
+    margin-right: 1.81818%;
+    padding-left: 20px;
   }
 }
 @media (min-width: 1024px) {
   .block-system-branding-block {
-    width: 75%;
+    width: 55.45455%;
     float: left;
-    padding-left: 1.38889%;
-    padding-right: 1.38889%;
+    margin-right: 1.81818%;
   }
 }
 
@@ -776,19 +822,17 @@ Figures
 @media (min-width: 768px) {
   .block-search {
     display: block;
-    width: 25%;
+    width: 17.27273%;
     float: right;
-    padding-left: 1.38889%;
-    padding-right: 1.38889%;
+    margin-right: 0;
   }
 }
 @media (min-width: 1024px) {
   .block-search {
     display: block;
-    width: 25%;
+    width: 17.27273%;
     float: right;
-    padding-left: 1.38889%;
-    padding-right: 1.38889%;
+    margin-right: 0;
   }
 }
 
@@ -808,14 +852,14 @@ Figures
     margin-bottom: 2em;
     width: 100%;
     float: left;
-    padding-left: 1.38889%;
-    padding-right: 1.38889%;
+    margin-left: 0;
+    margin-right: 0;
     z-index: 100;
   }
 }
 @media (min-width: 1024px) {
   .region-header .menu--main {
-    width: 994px;
+    width: 1024px;
     display: block;
   }
 }
@@ -909,7 +953,7 @@ Figures
 }
 
 .block-login-register a {
-  font-family: "Lucida Grande", "Libre Franklin", Helvetica, Verdana, san-serif;
+  font-family: "Libre Franklin", Helvetica, Verdana, san-serif;
   font-size: .94em;
   text-transform: uppercase;
   color: white;

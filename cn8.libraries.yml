@@ -3,6 +3,15 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+
+
+global-scripts:
+  version: 1.x
   js:
+    js/scripts.js:
+      minified: false
   dependencies:
+    - core/drupal
+    - core/drupalSettings
     - core/jquery
+    - core/jquery.once
