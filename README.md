@@ -1,0 +1,1 @@
+![Screenshot for Internet Drug News](img/ScreenShot.png)
